@@ -1,0 +1,94 @@
+{% load static %}
+
+
+<div class="pcoded-content">
+    <div class="pcoded-inner-content">
+        <div class="main-body">
+            <div class="page-wrapper">
+                <div class="page-body">
+                    <div class="row">
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card widget-card-1">
+                                <div class="card-block-small">
+                                    <i class="icofont icofont-pie-chart bg-c-blue card1-icon"></i>
+                                    <span class="text-c-blue f-w-600">Total Siswa</span>
+                                    <h4>1000 Siswa</h4>
+                                    <div>
+                                        <span class="f-left m-t-10 text-muted">
+                                            <i class="text-c-pink f-16 icofont icofont-calendar m-r-10"></i>Siswa Aktif
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card widget-card-1">
+                                <div class="card-block-small">
+                                    <i class="icofont icofont-ui-home bg-c-pink card1-icon"></i>
+                                    <span class="text-c-pink f-w-600">Revenue</span>
+                                    <h4>RP. 150.000</h4>
+                                    <div>
+                                        <span class="f-left m-t-10 text-muted">
+                                            <i class="text-c-pink f-16 icofont icofont-calendar m-r-10"></i>Last 24 hours
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 col-xl-6">
+                            <div class="card project-task">
+                                <div class="card-header">
+                                  
+                                    <br><br><br>
+                                    <div class="card-header-left ">
+                                        <h5>Data Pembayaran :</h5>
+                                    </div>
+                                </div>
+                                <div class="card-block p-b-10">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Nama Siswa</th>
+                                                    <th>Kelas Siswa</th>
+                                                    <th>Tingkat Kelas</th>
+                                                    <th>Status Pembayaran</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {% for posts in postsdata %}
+                                                <tr>
+                                                    <td>
+                                                        <div class="task-contain">
+                                                            <p class="d-inline-block m-r-20">{{posts.nama}}</p>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="task-contain">
+                                                            <p class="d-inline-block m-r-20">{{posts.kelas}}</p>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="task-contain">
+                                                            <p class="d-inline-block m-r-20" style="padding-left: 30px;">{{posts.tingkat_kelas}}</p>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                {% endfor %}
+                                            </tbody>
+                                        </table>
+                                          </div>
+                                         </div>
+                                       </div>
+                                     </div>
+                                  </div>
+                                </div>
+                              </div>
+                           <div id="styleSelector">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+             </div>
+  
+

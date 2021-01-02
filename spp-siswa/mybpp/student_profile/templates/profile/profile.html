@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+
+{% block view %}
+<div class="pcoded-content">
+    <div class="pcoded-inner-content">
+        <div class="main-body">
+            <div class="page-wrapper">
+                <div class="page-body">
+                    <div class="row">
+                        <div class="col-xl-12 col-xl-6">
+                            <div class="card project-task">
+                                <div class="card-header">
+                                    <div class="card-header-right">
+                                            <button class="btn btn-card btn-primary"><a href="{% url 'profile_add:identitas' %}" style="color: azure;">Tambah Data</a></button>
+                                    </div>
+                                    <br><br><br>
+                                    <div class="card-header-left ">
+                                        <h5>Data Pembayaran :</h5>
+                                    </div>
+                                </div>
+                                <div class="card-block p-b-10">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>Nama Siswa</th>
+                                                    <th style="padding-left: 30px;">Kelas Siswa</th>
+                                                    <th style="padding-right: 90px;">Tingkat Kelas Siswa</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {% for post in postsdata %}
+
+                                                <tr>
+                                                    <td>    
+                                                        <div class="task-contain">
+                                                            <p class="d-inline-block m-r-20">{{post.nama}}</p>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="task-contain">                                                                            
+                                                            <p class="d-inline-block m-l-20">{{post.kelas}}</p>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="task-contain">                                                                            
+                                                            <p class="d-inline-block m-l-20" style="padding-left: 30px;">{{post.tingkat_kelas}}</p>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="dropdown">
+                                                            <button class="btn btn-danger dropdown-toggle dropdown-toggle-split " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                              More Info
+                                                            </button>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                              <a class="dropdown-item" href="#">Perbarui Data Siswa</a>
+                                                              <a class="dropdown-item" href="#">Hapus Data Siswa</a>
+                                                            </div>
+                                                          </div>
+                                                    </td>
+                                                </tr>
+                                                {% endfor %}
+
+                                              </tbody>
+                                            </table>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>                   
+                             </div>
+                         </div>
+                     </div>
+                   <div id="styleSelector">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock view %}
+
+
+
