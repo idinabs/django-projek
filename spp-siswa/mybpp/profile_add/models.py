@@ -24,5 +24,15 @@ class Identitas(models.Model):
     ]
     tingkat_kelas = models.CharField(max_length=255, choices=tingkat, default='X')
 
+
+
+    aktif = [
+        ('aktif','aktif')
+    ]
+
+    status_siswa = models.CharField(max_length=50, choices=aktif, default='aktif')
+
     def __str__(self):
         return self.nama
+
+

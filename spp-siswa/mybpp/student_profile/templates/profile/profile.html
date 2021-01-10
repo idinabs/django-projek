@@ -11,28 +11,64 @@
                         <div class="col-xl-12 col-xl-6">
                             <div class="card project-task">
                                 <div class="card-header">
-                                    <div class="card-header-right">
-                                            <button class="btn btn-card btn-primary"><a href="{% url 'profile_add:identitas' %}" style="color: azure;">Tambah Data</a></button>
+                                    <!-- <div style="margin-top: 40px;">
+                                        
+                                    </div> -->
+                                    <div style="margin-bottom: 20px; ">
+                                        <br>
+                                        <div style="padding-left: 597px;">
+                                            <label for="">Cari Siswa</label>
+                                        <input type="search" class="site-search" aria-label="Search through site content">
+                                        <button style="color: black;">Search</button>
+                                        </div>
+                                        <div class="container">
+                                            <div class="btn btn-primary"><a href="{% url 'profile_add:identitas' %}"" class="ti-move" style="color: white;">Tambah</a></div>
+                                            <div class="btn btn-danger" data-toggle="modal" data-target="#exampleModal"><a href="#" class="ti-trash" style="color: white;">Hapus</a></div>
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog" role="document">
+                                                  <div class="modal-content">
+                                                    <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel">Yakin Ingin Menghapus Semua Data ?</h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                      Klik Tombol <b>Hapus</b> Untuk Menghapus Semua Data
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                      <div class="btn btn-danger"><a href="{% url 'student_profile:delete_all' %}" class="" style="color: white;">Hapus</a></div>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                        </div>
                                     </div>
-                                    <br><br><br>
-                                    <div class="card-header-left ">
-                                        <h5>Data Pembayaran :</h5>
-                                    </div>
+                                    <br>
+                                    <!-- <div class="card-header-left ">
+                                        <h5>Data Siswa :</h5>
+                                    </div> -->
                                 </div>
                                 <div class="card-block p-b-10">
                                     <div class="table-responsive">
                                         <table class="table table-hover">
                                             <thead>
                                                 <tr>
+                                                    <th>No</th>
                                                     <th>Nama Siswa</th>
                                                     <th style="padding-left: 30px;">Kelas Siswa</th>
                                                     <th style="padding-right: 90px;">Tingkat Kelas Siswa</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                {% for post in postsdata %}
+                                                {% for post in postsdat %}
 
                                                 <tr>
+                                                    <td>    
+                                                        <div class="task-contain">
+                                                            <p class="d-inline-block m-r-20">{{forloop.counter}}</p>
+                                                        </div>
+                                                    </td>
                                                     <td>    
                                                         <div class="task-contain">
                                                             <p class="d-inline-block m-r-20">{{post.nama}}</p>
@@ -50,12 +86,12 @@
                                                     </td>
                                                     <td>
                                                         <div class="dropdown">
-                                                            <button class="btn btn-danger dropdown-toggle dropdown-toggle-split " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <button class="btn btn-warning dropdown-toggle dropdown-toggle-split " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                               More Info
                                                             </button>
                                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                                              <a class="dropdown-item" href="#">Perbarui Data Siswa</a>
-                                                              <a class="dropdown-item" href="#">Hapus Data Siswa</a>
+                                                              <a class="dropdown-item" href="{% url 'student_profile:Update' post.id %}">Perbarui Data Siswa</a>
+                                                              <a class="dropdown-item" href="{% url 'student_profile:Delete' post.id %}">Hapus Data Siswa</a>
                                                             </div>
                                                           </div>
                                                     </td>

@@ -96,18 +96,351 @@
                                     </a>
                                     <ul class="pcoded-submenu">
                                         <li class=" ">
-                                            <a href="{% url 'student_profile:profile' %}">
+                                            <a href="{% url 'student_profile:HomeData' %}">
                                                 <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
                                                 <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Identitas Siswa</span>
                                                 <span class="pcoded-mcaret"></span>
                                             </a>
                                         </li>
-                                        <li class=" ">
-                                            <a href="breadcrumb.html">
-                                                <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Tahun Ajaran</span>
-                                                <span class="pcoded-mcaret"></span>
-                                            </a>
+                                        <li class="pcoded-hasmenu">
+                                                <a href="javascript:void(0)">
+                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Kelas Siswa</span>
+                                                    <span class="pcoded-mcaret"></span>
+                                                </a>
+                                                <ul class="pcoded-submenu">
+                                                    <li class="pcoded-hasmenu">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">TKJ</span>
+                                                            <span class="pcoded-mcaret"></span>
+                                                        </a>
+                                                        <ul class="pcoded-submenu">
+                                                            <li class="">
+                                                                <a href="{% url 'TKJ:x' %}">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">X</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="{% url 'TKJ:xi' %}">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XI</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="{% url 'TKJ:xii' %}">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XII</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>   
+                                                    </li>
+                                                    <li class="pcoded-hasmenu">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Multimedia</span>
+                                                            <span class="pcoded-mcaret"></span>
+                                                        </a>
+                                                        <ul class="pcoded-submenu">
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">X</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XI</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XII</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>   
+                                                    </li>
+                                                    <li class="pcoded-hasmenu">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Akuntansi</span>
+                                                            <span class="pcoded-mcaret"></span>
+                                                        </a>
+                                                        <ul class="pcoded-submenu">
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">X</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XI</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XII</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>   
+                                                    </li>
+                                                    <li class="pcoded-hasmenu">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">PBKS</span>
+                                                            <span class="pcoded-mcaret"></span>
+                                                        </a>
+                                                        <ul class="pcoded-submenu">
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">X</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XI</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XII</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>   
+                                                    </li>
+                                                    <li class="pcoded-hasmenu">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">TBU</span>
+                                                            <span class="pcoded-mcaret"></span>
+                                                        </a>
+                                                        <ul class="pcoded-submenu">
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">X</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XI</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XII</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>   
+                                                    </li>
+                                                    <li class="pcoded-hasmenu">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">OTKP</span>
+                                                            <span class="pcoded-mcaret"></span>
+                                                        </a>
+                                                        <ul class="pcoded-submenu">
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">X</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XI</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XII</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>   
+                                                    </li>
+                                                    <li class="pcoded-hasmenu">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">TBO</span>
+                                                            <span class="pcoded-mcaret"></span>
+                                                        </a>
+                                                        <ul class="pcoded-submenu">
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">X</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XI</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XII</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>   
+                                                    </li>
+                                                    <li class="pcoded-hasmenu">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Animasi</span>
+                                                            <span class="pcoded-mcaret"></span>
+                                                        </a>
+                                                        <ul class="pcoded-submenu">
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">X</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XI</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XII</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>   
+                                                    </li>
+                                                    <li class="pcoded-hasmenu">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">DKV</span>
+                                                            <span class="pcoded-mcaret"></span>
+                                                        </a>
+                                                        <ul class="pcoded-submenu">
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">X</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XI</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XII</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>   
+                                                    </li>
+                                                    <li class="pcoded-hasmenu">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">BDP</span>
+                                                            <span class="pcoded-mcaret"></span>
+                                                        </a>
+                                                        <ul class="pcoded-submenu">
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">X</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XI</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XII</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>   
+                                                    </li>
+                                                    <li class="pcoded-hasmenu">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">TKKR</span>
+                                                            <span class="pcoded-mcaret"></span>
+                                                        </a>
+                                                        <ul class="pcoded-submenu">
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">X</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XI</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XII</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>   
+                                                    </li>
+                                                </ul>
+                                            </li>
                                         </li>
                                     </ul>
                                 </li>
@@ -115,37 +448,362 @@
                             <li class="pcoded-hasmenu">
                                 <a href="javascript:void(0)">
                                     <span class="pcoded-micon"><i class="ti-stats-up"></i></span>
-                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Data Pembayaran</span>
+                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Data Kehadiran</span>
                                     <span class="pcoded-mcaret"></span>
                                 </a>
                                 <ul class="pcoded-submenu">
                                     <li class="pcoded-hasmenu">
                                         <a href="javascript:void(0)">
                                             <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
-                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Tanggal Pembayaran</span>
+                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Status Kehadiran</span>
                                             <span class="pcoded-mcaret"></span>
                                         </a>
                                         <ul class="pcoded-submenu">
-                                            <li class=" ">
-                                                <a href="accordion.html">
-                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.alert">Identitas Siswa</span>
+                                            <li class="pcoded-hasmenu">
+                                                <a href="javascript:void(0)">
+                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Absensi Siswa</span>
                                                     <span class="pcoded-mcaret"></span>
                                                 </a>
+                                                <ul class="pcoded-submenu">
+                                                    <li class="pcoded-hasmenu">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">TKJ</span>
+                                                            <span class="pcoded-mcaret"></span>
+                                                        </a>
+                                                        <ul class="pcoded-submenu">
+                                                            <li class="">
+                                                                <a href="{% url 'data_kehadiran:absen_X' %}">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">X</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="{% url 'data_kehadiran:absen_Xi' %}">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XI</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="{% url 'data_kehadiran:absen_Xii' %}">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XII</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>   
+                                                    </li>
+                                                    <li class="pcoded-hasmenu">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Multimedia</span>
+                                                            <span class="pcoded-mcaret"></span>
+                                                        </a>
+                                                        <ul class="pcoded-submenu">
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">X</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XI</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XII</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>   
+                                                    </li>
+                                                    <li class="pcoded-hasmenu">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Akuntansi</span>
+                                                            <span class="pcoded-mcaret"></span>
+                                                        </a>
+                                                        <ul class="pcoded-submenu">
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">X</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XI</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XII</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>   
+                                                    </li>
+                                                    <li class="pcoded-hasmenu">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">PBKS</span>
+                                                            <span class="pcoded-mcaret"></span>
+                                                        </a>
+                                                        <ul class="pcoded-submenu">
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">X</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XI</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XII</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>   
+                                                    </li>
+                                                    <li class="pcoded-hasmenu">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">TBU</span>
+                                                            <span class="pcoded-mcaret"></span>
+                                                        </a>
+                                                        <ul class="pcoded-submenu">
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">X</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XI</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XII</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>   
+                                                    </li>
+                                                    <li class="pcoded-hasmenu">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">OTKP</span>
+                                                            <span class="pcoded-mcaret"></span>
+                                                        </a>
+                                                        <ul class="pcoded-submenu">
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">X</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XI</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XII</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>   
+                                                    </li>
+                                                    <li class="pcoded-hasmenu">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">TBO</span>
+                                                            <span class="pcoded-mcaret"></span>
+                                                        </a>
+                                                        <ul class="pcoded-submenu">
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">X</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XI</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XII</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>   
+                                                    </li>
+                                                    <li class="pcoded-hasmenu">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">Animasi</span>
+                                                            <span class="pcoded-mcaret"></span>
+                                                        </a>
+                                                        <ul class="pcoded-submenu">
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">X</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XI</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XII</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>   
+                                                    </li>
+                                                    <li class="pcoded-hasmenu">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">DKV</span>
+                                                            <span class="pcoded-mcaret"></span>
+                                                        </a>
+                                                        <ul class="pcoded-submenu">
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">X</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XI</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XII</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>   
+                                                    </li>
+                                                    <li class="pcoded-hasmenu">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">BDP</span>
+                                                            <span class="pcoded-mcaret"></span>
+                                                        </a>
+                                                        <ul class="pcoded-submenu">
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">X</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XI</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XII</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>   
+                                                    </li>
+                                                    <li class="pcoded-hasmenu">
+                                                        <a href="javascript:void(0)">
+                                                            <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                            <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">TKKR</span>
+                                                            <span class="pcoded-mcaret"></span>
+                                                        </a>
+                                                        <ul class="pcoded-submenu">
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">X</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XI</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="">
+                                                                    <span class="pcoded-micon"><i class="ti-layout-grid2-alt"></i></span>
+                                                                    <span class="pcoded-mtext"  data-i18n="nav.basic-components.main">XII</span>
+                                                                    <span class="pcoded-mcaret"></span>
+                                                                </a>
+                                                            </li>
+                                                        </ul>   
+                                                    </li>
+                                                </ul>
                                             </li>
-                                            <li class=" ">
-                                                <a href="breadcrumb.html">
-                                                    <span class="pcoded-micon"><i class="ti-angle-right"></i></span>
-                                                    <span class="pcoded-mtext" data-i18n="nav.basic-components.breadcrumbs">Breadcrumbs</span>
-                                                    <span class="pcoded-mcaret"></span>
-                                                </a>
-                                            </li>
+                                        </li>
                                         </ul>
                                     </li>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
 {% endblock navbar %}
     

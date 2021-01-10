@@ -15,7 +15,7 @@ def formpro(request):
         if postform.is_valid():
             postform.save()
 
-            return redirect('student_profile:profile')
+            return redirect('student_profile:HomeData')
     
     konteks = {
         'postform':postform

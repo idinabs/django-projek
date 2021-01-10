@@ -7,4 +7,6 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('student_profile/', include(('student_profile.urls','student_profile'), namespace='student_profile')),
     path('profile_add/', include(('profile_add.urls','profile_add'), namespace='profile_add')),
+    path('TKJ/', include(('TKJ.urls','TKJ'), namespace='TKJ')),
+    path('data_kehadiran/', include(('data_kehadiran.urls','data_kehadiran'), namespace='data_kehadiran'))
 ]

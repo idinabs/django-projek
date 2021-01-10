@@ -27,7 +27,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'student_profile',
-    'profile_add', 
+    'profile_add',
+    'data_kehadiran',
+    'TKJ',    
 ]
 
 MIDDLEWARE = [

@@ -1,33 +1,33 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
+    {% load static %}
+    <!DOCTYPE html>
+    <html lang="en">
 
-{% include 'home/header.html' %}
+    {% include 'home/header.html' %}
+            
         
+    <body>
+        
+        {% block loader %}
+        {% include 'home/loader.html' %}
+        {% endblock loader %}
+            
     
-<body>
+        <div id="pcoded" class="pcoded">
+            
+        {% include 'home/navbar.html' %}
     
-    {% block loader %}
-    {% include 'home/loader.html' %}
-    {% endblock loader %}
         
-   
-    <div id="pcoded" class="pcoded">
-        
-    {% include 'home/navbar.html' %}
-  
-    
-    {% block view %}
-    {% include 'home/view-home-data.html' %}
+        {% block view %}
+        {% include 'home/view-home-data.html' %}
 
-    {% endblock view %}
-        
-        
-                       
-    </div>
+        {% endblock view %}
+            
+            
+                        
+        </div>
 
-    {% include 'home/javascript.html' %}
+        {% include 'home/javascript.html' %}
 
-</body>
+    </body>
 
-</html>
+    </html>
