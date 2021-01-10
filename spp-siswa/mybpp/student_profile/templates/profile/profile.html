@@ -16,14 +16,31 @@
                                     </div> -->
                                     <div style="margin-bottom: 20px; ">
                                         <br>
-                                        <div style="padding-left: 597px;">
-                                            <label for="">Cari Siswa</label>
-                                        <input type="search" class="site-search" aria-label="Search through site content">
-                                        <button style="color: black;">Search</button>
-                                        </div>
+                                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                                              <span class="navbar-toggler-icon"></span>
+                                            </button>
+                                            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                                              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                                                <li class="nav-item active">
+                                                  <a class="btn nav-link btn-primary ti-move" style="color: white;" href="{% url 'profile_add:identitas' %}">Tambah<span class="sr-only">(current)</span></a>
+                                                </li>
+                                                <div>
+                                                    <li class="nav-item">
+                                                        <a class="btn nav-link btn-danger ti-trash" style="color: white;" href="#" data-toggle="modal" data-target="#exampleModal">Hapus<span class="sr-only">(current)</span></a>
+                                                    </li>
+                                                </div>
+                                                
+                                                </li>
+                                              </ul>
+                                              <form class="form-inline my-2 my-lg-0">
+                                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+                                              </form>
+                                            </div>
+                                          </nav>
+                                     
                                         <div class="container">
-                                            <div class="btn btn-primary"><a href="{% url 'profile_add:identitas' %}"" class="ti-move" style="color: white;">Tambah</a></div>
-                                            <div class="btn btn-danger" data-toggle="modal" data-target="#exampleModal"><a href="#" class="ti-trash" style="color: white;">Hapus</a></div>
                                             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog" role="document">
                                                   <div class="modal-content">
@@ -55,6 +72,7 @@
                                             <thead>
                                                 <tr>
                                                     <th>No</th>
+                                                    <th>NIS</th>
                                                     <th>Nama Siswa</th>
                                                     <th style="padding-left: 30px;">Kelas Siswa</th>
                                                     <th style="padding-right: 90px;">Tingkat Kelas Siswa</th>
@@ -69,6 +87,11 @@
                                                             <p class="d-inline-block m-r-20">{{forloop.counter}}</p>
                                                         </div>
                                                     </td>
+                                                    <td>
+                                                      <div class="task-contain">
+                                                          <p class="d-inline-block m-r-20">{{post.nis_siswa}}</p>
+                                                      </div>
+                                                  </td>
                                                     <td>    
                                                         <div class="task-contain">
                                                             <p class="d-inline-block m-r-20">{{post.nama}}</p>

@@ -16,7 +16,7 @@ class Identitas(models.Model):
         ('Animasi', 'Animasi'),
     ]
     kelas = models.CharField(max_length=255, choices=pilihan_kelas, default='Teknik Komputer & Jaringan')
-
+    nis_siswa = models.IntegerField()
     tingkat = [
         ('X','X'),
         ('XI','XI'),

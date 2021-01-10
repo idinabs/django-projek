@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'student_profile',
     'profile_add',
     'data_kehadiran',
+    'landing',
     'TKJ',    
 ]
 
@@ -114,3 +115,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+
+LOGIN_URL = 'landing'

@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html>
  <head>
-  <title>Rabuncode</title>
+  <title>SMKN 1 DOMPU</title>
  </head>
  <body>
-<!--   
-  <img src="{% static 'data_kehadiran/assets/images/ntb.png' %}" align='left' style="width: 90px; height: 110px; padding-left: 350px;">
-  <img src="{% static 'data_kehadiran/assets/images/smk1dompu.png' %}" align='right' style="width: 90px; padding-right: 340px; "> -->
+
+  <img src="{% static 'data_kehadiran/images/ntb.png' %}" align='left' style="width: 90px; height: 110px; padding-left: 350px;"> 
+  <img src="{% static 'data_kehadiran/images/smk1dompu.png' %}" align='right' style="width: 90px; padding-right: 340px; ">
   <h3  style="padding-left: 450px;">PEMERINTAH PROVINSI NUSA TENGGARA BARAT</h3>
   <h3  style="padding-left: 480px;">DINAS PENDIDIKAN DAN KEBUDAYAAN</h3>
   <h3  style="padding-left: 560px;">SMK NEGERI 1 DOMPU</h3>
@@ -21,11 +21,12 @@
     <td></td>
    </tr>
   </table>
-  <h3><center>ABSENSI KELAS</center></h3>
+  <h3><center>Absensi XII Teknik Komputer & Jaringan</center></h3>  
+  
+  {% block absen_xii %}
+  
   <br/>
-
-
- <table  width="900" border="1" align="center">
+ <table  width="900" border="1" align="center">   
   <tr>
    <th rowspan="2">No</th>
    <th rowspan="2">NIS</th>
@@ -44,10 +45,12 @@
    <td align="center" width="25">9</td>
   </tr>
 
+
+  {% for absen in absen_xii %}
   <tr align="center">
-   <td></td>
-   <td></td>
-   <td></td>
+   <td>{{forloop.counter}}</td>
+   <td>{{absen.nis_siswa}}</td>
+   <td style="text-align:left;">{{absen.nama}}</td>
    <td></td>
    <td></td>
    <td></td>
@@ -59,7 +62,11 @@
    <td></td>
   
   </tr>
+  {% endfor %}
+  {% endblock absen_xii %}
+   
  </table>
+
  <br />
  </body>
 </html>

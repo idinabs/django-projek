@@ -17,6 +17,11 @@ class Profileform(forms.ModelForm):
                     'class':'form-control',
                 }
             ),
+           'nis_siswa' : forms.TextInput(
+                attrs= {
+                    'class':'form-control',
+                }
+            ),
            'tingkat_kelas' : forms.Select(
                 attrs= {
                     'class':'form-control',

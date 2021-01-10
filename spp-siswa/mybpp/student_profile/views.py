@@ -1,7 +1,10 @@
 from django.shortcuts import render, redirect
 from profile_add.models import Identitas
 from profile_add.forms import Profileform
+from django.contrib.auth.decorators import login_required
+from django.conf import settings
 
+@login_required(login_url=settings.LOGIN_URL)
 def HomeData(request):
     postsdat = Identitas.objects.all()
     konteks = {
@@ -9,18 +12,21 @@ def HomeData(request):
         }
     return render(request, 'profile/profile.html', konteks)
 
+@login_required(login_url=settings.LOGIN_URL)
 def Delete_Data(request, Delete_Data):
     delete_data = Identitas.objects.get(id=Delete_Data)
     delete_data.delete()
 
     return redirect('student_profile:HomeData')
 
+@login_required(login_url=settings.LOGIN_URL)
 def delete_semua(request):
     delete_semua = Identitas.objects.all()
     delete_semua.delete()
 
     return redirect('home')
 
+@login_required(login_url=settings.LOGIN_URL)
 def Update_Data(request, update_data):
     update_data = Identitas.objects.get(id=update_data)
 
@@ -45,6 +51,8 @@ def Update_Data(request, update_data):
 
     return render(request, 'profile/update/update.html', konteks)
 
+
+@login_required(login_url=settings.LOGIN_URL)
 def HomeForm(request):
     postform = Profileform(request.POST)
     if request.method == "POST":

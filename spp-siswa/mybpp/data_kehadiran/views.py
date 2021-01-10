@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from profile_add.models import Identitas
+
 
 
 def halaman_utama(request):
@@ -12,8 +14,21 @@ def absen_x(request):
 
 
 def absen_xi(request):
-    return render(request, 'TKJ/kehadiran/xi.html')
+    absen_xi = Identitas.objects.filter(tingkat_kelas='XI')
+    
+    konteks = {
+        'absen_xi':absen_xi
+    }
+    return render(request, 'TKJ/kehadiran/xi.html',konteks)
+
+
 
 
 def absen_xii(request):
-    return render(request, 'TKJ/kehadiran/xii.html')
+    absen_xii = Identitas.objects.filter(tingkat_kelas='XII')
+    
+    konteks = {
+        'absen_xii':absen_xii
+    }
+    return render(request, 'TKJ/kehadiran/xii.html',konteks)
+

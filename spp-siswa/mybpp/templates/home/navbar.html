@@ -8,9 +8,13 @@
         <div class="navbar-wrapper">
 
             <div class="navbar-logo">
-                <a href="index.html">
-                    <h5 style="padding-left: 40px;">Rabuncode</h5>
-                </a>
+                <div style="padding-left: 20px;">
+                    <img src="{% static 'landing/assets/img/portfolio/logo-smkn-1-dompu.jpg' %}" style="width: 40px;" alt="">     
+
+                </div>
+                <div style="padding-left: 10px;">
+                    <h5 style="color: white;">SMKN 1 DOMPU</h5>
+                </div>
                 <a class="mobile-options">
                     <i class="ti-more"></i>
                 </a>
@@ -21,7 +25,7 @@
                     <li class="user-profile header-notification">
                         <a href="#!">
                             <img src="{% static 'home/assets/images/idin.jpg' %} " class="img-radius" alt="User-Profile-Image">
-                            <span>Abubakar Sidik</span>
+                            <span>{{user}}</span>
                             <i class="ti-angle-down"></i>
                         </a>
                         <ul class="show-notification profile-notification">
@@ -46,7 +50,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="auth-normal-sign-in.html">
+                                <a href="{% url 'logout' %}">
                                     <i class="ti-layout-sidebar-left"></i> Logout
                                 </a>
                             </li>
@@ -61,17 +65,6 @@
             <nav class="pcoded-navbar">
                 <div class="sidebar_toggle"><a href="#"><i class="icon-close icons"></i></a></div>
                 <div class="pcoded-inner-navbar main-menu">
-                    <div class="">
-                        <div class="main-menu-content">
-                            <ul>
-                                <li class="more-details">
-                                    <a href="#"><i class="ti-user"></i>View Profile</a>
-                                    <a href="#!"><i class="ti-settings"></i>Settings</a>
-                                    <a href="auth-normal-sign-in.html"><i class="ti-layout-sidebar-left"></i>Logout</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                     <div class="pcoded-navigatio-lavel" data-i18n="nav.category.navigation">Layout</div>
                     <ul class="pcoded-item pcoded-left-item">
                         <li class="active">
@@ -796,6 +789,7 @@
                                                             </li>
                                                         </ul>   
                                                     </li>
+                                                    
                                                 </ul>
                                             </li>
                                         </li>

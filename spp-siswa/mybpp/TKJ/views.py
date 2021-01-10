@@ -69,3 +69,4 @@ def XII(request):
         'kelas_xii':kelas_xii
     }
     return render(request, 'TKJ/xii.html',konteks)
+
