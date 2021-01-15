@@ -10,7 +10,7 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
+  <!-- logo -->
   <link href="{% static 'landing/assets/img/portfolio/logo-smkn-1-dompu.jpg' %} " rel="icon">
   <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
@@ -43,10 +43,10 @@
   <section id="topbar" class="d-none d-lg-block">
     <div class="container clearfix">
       <div class="contact-info float-left">
-        <i class="icofont-envelope"></i><a href="mailto:contact@example.com">smkn1dpu@gmail.com</a>
+        <i class="icofont-envelope"></i>smkn1dpu@gmail.com
         <i class="icofont-phone"></i> (0373) 21126
       </div>
-      <div class="social-links float-right">
+      <div class="social-links float-right" target="_blank">
         <a href="https://www.facebook.com/humassmknsatu.dompu" class="twitter"><i class="icofont-twitter"></i></a>
         <a href="https://www.instagram.com/osis_smksadom/" class="facebook"><i class="icofont-facebook"></i></a>
         <a href="smkn1dpu@gmail.com" class="gmail"><i class="icofont-envelope"></i></a>
@@ -71,8 +71,19 @@
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#contact">Contact Us</a></li>
-          <li class="btn btn-primary"><a href="{% url 'login' %}" style="color: white;">Sign In</a></li>
-
+          
+          {% if user.is_authenticated %}
+          <li><a href="#">{{user}}</a></li>
+          <li>
+            <a href="{% url 'logout' %}">
+                <i class="ti-layout-sidebar-left"></i> Logout
+            </a>
+          </li>
+          {% else %}
+          <li class="btn btn-primary">
+            <a href="{% url 'login' %}" style="color: white;">Sign In</a>
+          </li>
+          {% endif %}
         </ul>
       </nav><!-- .nav-menu -->
 

@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path, include
-from .views import home, LoginView, landing
-from django.contrib.auth.views import LogoutView
+from .views import home, LoginView, landing, LogoutView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -13,5 +13,5 @@ urlpatterns = [
     path('data_kehadiran/', include(('data_kehadiran.urls','data_kehadiran'), namespace='data_kehadiran')),
     # path('landing/', include(('landing.urls','data_kehadiran'), namespace='landing')),
     path('login/', LoginView, name='login'),
-    path("logout/", LogoutView.as_view(next_page='login'), name='logout'),
+    path("logout/", LogoutView, name='logout'),
 ]

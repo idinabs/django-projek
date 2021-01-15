@@ -32,10 +32,6 @@ def LoginView(request):
 
     return render(request, 'user/login.html')
 
-# def LogoutView(request):
-#     if request.method == 'POST':
-#         if request.POST["logout"] == "Submit":
-#             logout(request)
-
-
-#     return render(request, 'user/logout.html')
+def LogoutView(request):
+    logout(request)
+    return redirect(landing)
